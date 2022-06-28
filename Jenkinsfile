@@ -6,11 +6,11 @@ pipeline {
                 sh "terraform init"
             }
         }
-        // stage('Plan Infrastructure') {
-        //     steps{
-        //         sh "terraform plan"
-        //     }
-        // }
+        stage('Plan Infrastructure') {
+            steps{
+                sh "terraform plan"
+            }
+        }
         // stage('Create Infrastructure') {
         //     steps{
         //         sh "terraform apply"
