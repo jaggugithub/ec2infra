@@ -11,10 +11,10 @@ pipeline {
                 sh "terraform plan"
             }
         }
-        // stage('Create Infrastructure') {
-        //     steps{
-        //         sh "terraform apply"
-        //     }
-        // }
+        stage('Create Infrastructure') {
+            steps{
+                sh "terraform apply"
+            }
+        }
     }    
 }
