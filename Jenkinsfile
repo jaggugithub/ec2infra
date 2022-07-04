@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Create Infrastructure') {
             steps{
-                sh "terraform apply"
+                sh "terraform apply -auto-approve"
             }
         }
     }    
