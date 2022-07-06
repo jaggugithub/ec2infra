@@ -15,7 +15,7 @@ pipeline {
         //     steps {
         //         sh "terraform apply -auto-approve"
         //     }
-        }
+        // }
         stage('Move Public IP File') {
             steps {
                 sh"pwd"
