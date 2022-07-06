@@ -9,6 +9,6 @@ resource "aws_instance" "webapp" {
     Environment = var.environment
   }
   provisioner "local-exec" {
-    command = "echo ${self.public_ip} >> IP.txt"
+    command = "echo ${self.public_ip} >> hosts"
   }
 }

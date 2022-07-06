@@ -19,7 +19,7 @@ pipeline {
         stage('Move Public IP File') {
             steps {
                 sh"pwd"
-                sh "sudo mkdir /opt/playbooks"
+                //sh "sudo mkdir /opt/playbooks"
                 // sh "sudo mv IP.txt /opt/playbooks/hosts"
             }
         }
