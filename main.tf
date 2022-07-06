@@ -8,4 +8,7 @@ resource "aws_instance" "webapp" {
     Name        = var.servername[count.index]
     Environment = var.environment
   }
+  provisioner "local-exec" {
+    command = "echo ${self.public_ip} >> IP.txt"
+  }
 }
