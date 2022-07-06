@@ -11,16 +11,9 @@ pipeline {
                 sh "terraform plan"
             }
         }
-        // stage('Create Infrastructure') {
-        //     steps {
-        //         sh "terraform apply -auto-approve"
-        //     }
-        // }
-        stage('Move Public IP File') {
+        stage('Create Infrastructure') {
             steps {
-                sh"pwd"
-                //sh "sudo mkdir /opt/playbooks"
-                // sh "sudo mv IP.txt /opt/playbooks/hosts"
+                sh "terraform apply -auto-approve"
             }
         }
         // stage('Destroy Infrastructure') {
